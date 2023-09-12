@@ -146,3 +146,4 @@ sketch
 .history
 
 # End of https://www.gitignore.io/api/react,django,visualstudiocode
+.venv

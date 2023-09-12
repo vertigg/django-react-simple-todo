@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import {
-  HashRouter as Router,
   Route,
+  HashRouter as Router,
   Switch,
-  Redirect
 } from "react-router-dom";
 
 import { Provider as AlertProvider } from "react-alert";
@@ -14,12 +12,12 @@ import Alerts from "./layout/Alerts";
 import Header from "./layout/Header";
 import Dashboard from "./todos/Dashboard";
 
-import store from "../store";
 import { Provider } from "react-redux";
+import { loadUser } from "../actions/auth";
+import store from "../store";
 import Login from "./accounts/Login";
 import Register from "./accounts/Register";
 import PrivateRoute from "./common/PrivateRoute";
-import { loadUser } from "../actions/auth";
 
 const alertOptions = {
   timeout: 3000,
@@ -54,4 +52,4 @@ class App extends Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("app"));
+export default App
