@@ -14,9 +14,15 @@ This project is based on amazing [Traversy Media Tutorial](https://www.youtube.c
 
 ## How to launch this thing
 
-- `pipenv install` (if you don't have it, install it with `pip3 install pipenv` first)
-- `pipenv shell`
-- `python manage.py migrate`
-- `npm install && npm run build`
-- `python manage.py runserver`
-- Visit `localhost:8000`
+- `python3 -m venv .venv`
+- `source .venv/bin/activate`
+- `pip install -r requirements.txt`
+- `./manage.py migrate`
+- `./manage.py runserver`
+
+In separate console:
+
+- `npm i`
+- `npm run dev`
+
+Visit `localhost:8000`
